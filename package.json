@@ -1,0 +1,91 @@
+{
+  "name": "loopback-connector-esv6",
+  "version": "2.1.1",
+  "description": "LoopBack Connector for Elasticsearch 6.x and 7.x",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "mocha --recursive",
+    "testv6": "mocha test/es-v6/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "keywords": [
+    "loopback",
+    "elastic",
+    "elasticsearch",
+    "elasticsearchv6",
+    "es",
+    "esv6",
+    "esv7",
+    "loopback-connector",
+    "connector"
+  ],
+  "author": "bharathkontham",
+  "contributors": [
+    {
+      "name": "Pulkit Singhal",
+      "email": "pulkit@shoppinpal.com"
+    },
+    {
+      "name": "yagobski"
+    },
+    {
+      "name": "Aquid Shahwar",
+      "email": "aquid.shahwar@gmail.com"
+    },
+    {
+      "name": "wolfgang-s"
+    },
+    {
+      "name": "Bharath Reddy Kontham",
+      "email": "bharath2211@gmail.com"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop-community/loopback-connector-elastic-search.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strongloop-community/loopback-connector-elastic-search/issues"
+  },
+  "homepage": "https://github.com/strongloop-community/loopback-connector-elastic-search",
+  "dependencies": {
+    "async": "3.2.4",
+    "debug": "3.2.6",
+    "elasticsearch": "15.2.0",
+    "es6": "npm:@elastic/elasticsearch@6.8.8",
+    "es7": "npm:@elastic/elasticsearch@7.13.0",
+    "lodash": "4.17.21",
+    "loopback-connector": "4.9.0",
+    "ramda": "0.27.2",
+    "bluebird": "2.9.14"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mocha-test": "^0.12.1",
+    "loopback-datasource-juggler": "^2.55.3",
+    "should": "^5.2.0",
+    "chai": "4.1.2",
+    "eslint": "6.5.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-loopback": "8.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.15.0",
+    "husky": "1.0.1",
+    "mocha": "5.2.0",
+    "sonarqube-scanner": "2.5.0",
+    "supertest": "3.0.0"
+  }
+}

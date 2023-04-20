@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "version": "2.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint ."
+  },
+  "dependencies": {
+    "compression": "1.7.3",
+    "cors": "2.8.5",
+    "helmet": "3.16.0",
+    "loopback": "3.19.0",
+    "loopback-boot": "git+ssh://git@git.valuefy.com:common/loopback-boot.git#76024fdfc13d885e935a8420b9530dfe78305a26",
+    "loopback-component-explorer": "git+ssh://git@git.valuefy.com:common/loopback-component-explorer.git",
+    "loopback-component-storage": "git+ssh://git@git.valuefy.com:common/loopback-component-storage.git",
+    "loopback-connector": "git+ssh://git@git.valuefy.com:common/loopback-connector.git",
+    "loopback-connector-esv6": "git+ssh://git@git.valuefy.com/common/loopback-connector-es-v7.git",
+    "loopback-datasource-juggler": "git+ssh://git@git.valuefy.com:common/loopback-datasource-juggler.git",
+    "ramda": "0.26.1",
+    "serve-favicon": "2.5.0",
+    "strong-error-handler": "3.2.0"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  }
+}
